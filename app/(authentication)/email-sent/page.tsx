@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AuthHeader } from "../_components/auth-message";
+import { AuthHeader } from "../_components/auth-header";
 import { buttonVariants } from "@/components/ui/button";
 
 const Page = () => {

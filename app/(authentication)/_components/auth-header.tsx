@@ -1,10 +1,10 @@
 import { GridPattern } from "@/components/pattern";
 
-type AuthMessage = {
+type AuthHeader = {
   title: string;
   description: string;
 };
-export const AuthHeader = ({ title, description }: AuthMessage) => {
+export const AuthHeader = ({ title, description }: AuthHeader) => {
   return (
     <div className="relative flex flex-col justify-center items-center gap-3 mb-8 overflow-hidden rounded-2xl border border-background/10 bg-background/5 text-center">
       <GridPattern

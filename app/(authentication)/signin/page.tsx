@@ -1,4 +1,4 @@
-import { AuthHeader } from "@/app/(authentication)/_components/auth-message";
+import { AuthHeader } from "@/app/(authentication)/_components/auth-header";
 import { Footer } from "@/app/(authentication)/_components/footer";
 import { FormWrapper } from "@/app/(authentication)/_components/form-wrapper";
 

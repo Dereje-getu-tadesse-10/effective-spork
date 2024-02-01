@@ -3,7 +3,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SparklesIcon } from "@/components/icons/index";
-import { sendMagicLink } from "../_actions/magic-link";
+import { sendMagicLink } from "@/app/(authentication)/_actions/magic-link";
 
 export const Form = () => {
   return (
