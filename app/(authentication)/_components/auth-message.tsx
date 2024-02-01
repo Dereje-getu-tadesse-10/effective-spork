@@ -4,9 +4,9 @@ type AuthMessage = {
   title: string;
   description: string;
 };
-export const AuthMessage = ({ title, description }: AuthMessage) => {
+export const AuthHeader = ({ title, description }: AuthMessage) => {
   return (
-    <div className="relative flex flex-col justify-center items-center gap-3 mb-8 overflow-hidden rounded-2xl border border-background/10 bg-background/5">
+    <div className="relative flex flex-col justify-center items-center gap-3 mb-8 overflow-hidden rounded-2xl border border-background/10 bg-background/5 text-center">
       <GridPattern
         offsetX={0}
         offsetY={0}

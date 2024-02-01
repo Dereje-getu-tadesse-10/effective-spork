@@ -1,12 +1,12 @@
-import { AuthMessage } from "@/components/auth/auth-message";
-import { Footer } from "@/components/auth/footer";
-import { FormWrapper } from "@/components/auth/wrapper-form";
+import { AuthHeader } from "@/app/(authentication)/_components/auth-message";
+import { Footer } from "@/app/(authentication)/_components/footer";
+import { FormWrapper } from "@/app/(authentication)/_components/form-wrapper";
 
 const Page = () => {
   return (
     <main className="container flex flex-col items-center justify-center h-screen">
       <section className="my-12 max-w-sm flex flex-col justify-center w-full mx-auto">
-        <AuthMessage
+        <AuthHeader
           title="Welcome back"
           description="Welcome back! Please enter your details."
         />
