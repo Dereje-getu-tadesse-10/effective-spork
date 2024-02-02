@@ -10,6 +10,8 @@ export const env = createEnv({
     SPOTIFY_CLIENT_SECRET: z.string().min(1),
     NEXTAUTH_SECRET: z.string().min(1),
     NEXTAUTH_URL: z.string().url(),
+    DISCOGS_CONSUMER_KEY: z.string().min(1),
+    DISCOGS_CONSUMER_SECRET: z.string().min(1),
   },
   client: {},
   experimental__runtimeEnv: {
@@ -20,5 +22,7 @@ export const env = createEnv({
     SPOTIFY_CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET,
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+    DISCOGS_CONSUMER_KEY: process.env.DISCOGS_CONSUMER_KEY,
+    DISCOGS_CONSUMER_SECRET: process.env.DISCOGS_CONSUMER_SECRET,
   },
 });
