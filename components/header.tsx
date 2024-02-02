@@ -1,7 +1,6 @@
 import { LangSwitcher } from "@/app/lang-switcher";
 import { ThemeToggle } from "@/app/theme-toggle";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
 
 export const Header = () => {
   return (
