@@ -1,6 +1,7 @@
 import { LangSwitcher } from "@/app/lang-switcher";
 import { ThemeToggle } from "@/app/theme-toggle";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export const Header = () => {
   return (
@@ -13,7 +14,9 @@ export const Header = () => {
         </div>
         <div className="flex gap-2">
           <ThemeToggle />
-          <LangSwitcher />
+          <Suspense>
+            <LangSwitcher />
+          </Suspense>
         </div>
       </div>
     </header>

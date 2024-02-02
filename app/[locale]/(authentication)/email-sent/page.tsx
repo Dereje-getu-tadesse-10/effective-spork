@@ -4,6 +4,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { getScopedI18n } from "@/locales/server";
 
 import { Metadata } from "next";
+import { auth } from "@/lib/auth/auth";
+import { redirect } from "next/navigation";
 
 export const generateMetadata = async ({
   params: { locale },
@@ -19,6 +21,10 @@ export const generateMetadata = async ({
 };
 
 const Page = async () => {
+  const session = await auth();
+  if (session) {
+    redirect("/");
+  }
   const scopedT = await getScopedI18n("authentication");
   return (
     <main>

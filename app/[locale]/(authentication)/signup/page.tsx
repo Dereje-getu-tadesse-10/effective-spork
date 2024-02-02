@@ -1,8 +1,10 @@
 import { AuthHeader } from "@/app/[locale]/(authentication)/_components/auth-header";
 import { Footer } from "@/app/[locale]/(authentication)/_components/footer";
 import { FormWrapper } from "@/app/[locale]/(authentication)/_components/form-wrapper";
+import { auth } from "@/lib/auth/auth";
 import { getScopedI18n } from "@/locales/server";
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 export const generateMetadata = async ({
   params: { locale },
@@ -18,6 +20,11 @@ export const generateMetadata = async ({
 };
 
 const Page = async () => {
+  const session = await auth();
+  if (session) {
+    redirect("/");
+  }
+
   const scopedT = await getScopedI18n("authentication");
   return (
     <main className="container flex flex-col items-center justify-center h-screen">

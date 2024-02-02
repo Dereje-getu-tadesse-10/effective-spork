@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/select";
 
 export const LangSwitcher = () => {
-  const changeLocale = useChangeLocale();
+  const changeLocale = useChangeLocale({ preserveSearchParams: true });
   const locale = useCurrentLocale();
   console.log(locale);
   return (
