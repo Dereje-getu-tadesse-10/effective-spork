@@ -2,8 +2,19 @@ import { AuthHeader } from "@/app/[locale]/(authentication)/_components/auth-hea
 import { Footer } from "@/app/[locale]/(authentication)/_components/footer";
 import { FormWrapper } from "@/app/[locale]/(authentication)/_components/form-wrapper";
 import { getScopedI18n } from "@/locales/server";
-type Props = {
+import { Metadata } from "next";
+
+export const generateMetadata = async ({
+  params: { locale },
+}: {
   params: { locale: string };
+}) => {
+  const t = await getScopedI18n("authentication.seo");
+
+  return {
+    title: t("signUp.title"),
+    description: t("signUp.description"),
+  } satisfies Metadata;
 };
 
 const Page = async () => {

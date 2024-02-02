@@ -1,4 +1,8 @@
 export default {
+  home: {
+    title: "Keeply en",
+    description: "Keeply...",
+  },
   authentication: {
     signIn: {
       title: "Welcome back",
@@ -25,5 +29,19 @@ export default {
       continue: "Continue with Email",
     },
     home: "Go to home page",
+    seo: {
+      signIn: {
+        title: "Keeply | Sign In",
+        description: "Sign in to your account",
+      },
+      signUp: {
+        title: "Keeply | Sign Up",
+        description: "Sign up to your account",
+      },
+      emailSent: {
+        title: "Keeply | Email sent",
+        description: "Check your email to sign in to your account",
+      },
+    },
   },
 } as const;
