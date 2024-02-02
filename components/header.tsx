@@ -1,12 +1,10 @@
-import { LangSwitcher } from "@/app/lang-switcher";
 import { ThemeToggle } from "@/app/theme-toggle";
 import Link from "next/link";
-import { Suspense } from "react";
 
 export const Header = () => {
   return (
     <header className="header fixed w-full">
-      <div className="container py-4 flex justify-between items-center">
+      <div className="container py-2 flex justify-between items-center">
         <div>
           <Link href="/">
             <LogoIpsum />
