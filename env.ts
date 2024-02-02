@@ -12,6 +12,7 @@ export const env = createEnv({
     NEXTAUTH_URL: z.string().url(),
     DISCOGS_CONSUMER_KEY: z.string().min(1),
     DISCOGS_CONSUMER_SECRET: z.string().min(1),
+    DISCOGS_API_ROUTE: z.string().url(),
   },
   client: {},
   experimental__runtimeEnv: {
@@ -24,5 +25,6 @@ export const env = createEnv({
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
     DISCOGS_CONSUMER_KEY: process.env.DISCOGS_CONSUMER_KEY,
     DISCOGS_CONSUMER_SECRET: process.env.DISCOGS_CONSUMER_SECRET,
+    DISCOGS_API_ROUTE: process.env.DISCOGS_API_ROUTE,
   },
 });

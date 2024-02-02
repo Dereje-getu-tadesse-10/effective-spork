@@ -14,9 +14,6 @@ export const Header = () => {
         </div>
         <div className="flex gap-2">
           <ThemeToggle />
-          <Suspense>
-            <LangSwitcher />
-          </Suspense>
         </div>
       </div>
     </header>

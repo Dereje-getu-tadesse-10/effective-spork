@@ -13,6 +13,7 @@ export const config = {
     Google({
       clientId: env.GOOGLE_CLIENT_ID,
       clientSecret: env.GOOGLE_CLIENT_SECRET,
+      allowDangerousEmailAccountLinking: true,
     }),
     Spotify({
       clientId: env.SPOTIFY_CLIENT_ID,
