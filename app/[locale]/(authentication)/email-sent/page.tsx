@@ -1,14 +1,16 @@
 import Link from "next/link";
-import { AuthHeader } from "../_components/auth-header";
+import { AuthHeader } from "@/app/[locale]/(authentication)/_components/auth-header";
 import { buttonVariants } from "@/components/ui/button";
+import { getScopedI18n } from "@/locales/server";
 
-const Page = () => {
+const Page = async () => {
+  const scopedT = await getScopedI18n("authentication");
   return (
     <main>
       <section className="my-12 max-w-sm flex flex-col justify-center w-full mx-auto">
         <AuthHeader
-          title="Magic link sent !"
-          description="Please check your email to sign in to your account."
+          title={scopedT("emailSent.title")}
+          description={scopedT("emailSent.description")}
         />
         <Link
           href={"/"}
@@ -18,7 +20,7 @@ const Page = () => {
             className: "w-min self-center",
           })}
         >
-          Go to home page
+          {scopedT("home")}
         </Link>
       </section>
     </main>

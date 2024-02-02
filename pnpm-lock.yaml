@@ -41,6 +41,9 @@ dependencies:
   next-auth:
     specifier: 5.0.0-beta.5
     version: 5.0.0-beta.5(next@14.1.0)(react@18.2.0)
+  next-international:
+    specifier: ^1.2.3
+    version: 1.2.3
   next-safe-action:
     specifier: ^6.0.2
     version: 6.0.2(next@14.1.0)(react@18.2.0)
@@ -2037,6 +2040,10 @@ packages:
       side-channel: 1.0.4
     dev: true
 
+  /international-types@0.8.1:
+    resolution: {integrity: sha512-tajBCAHo4I0LIFlmQ9ZWfjMWVyRffzuvfbXCd6ssFt5u1Zw15DN0UBpVTItXdNa1ls+cpQt3Yw8+TxsfGF8JcA==}
+    dev: false
+
   /is-array-buffer@3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
     dependencies:
@@ -2447,6 +2454,14 @@ packages:
       '@auth/core': 0.21.0
       next: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
+    dev: false
+
+  /next-international@1.2.3:
+    resolution: {integrity: sha512-pLHX6dIjg2bd/LHcBIylhQXsiv2CQgAEKXb1tlVMXIj+RxpxgB9ymgkNdm4OsEmEpVlleCoq4T3k4Pi9QXZ8wQ==}
+    dependencies:
+      client-only: 0.0.1
+      international-types: 0.8.1
+      server-only: 0.0.1
     dev: false
 
   /next-safe-action@6.0.2(next@14.1.0)(react@18.2.0):
@@ -2960,6 +2975,10 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: true
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /set-function-length@1.2.0:
     resolution: {integrity: sha512-4DBHDoyHlM1IRPGYcoxexgh67y4ueR53FKV1yyxwFMY7aCqcN/38M1+SwZ/qJQ8iLv7+ck385ot4CcisOAPT9w==}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
+import { getCurrentLocale } from "@/locales/server";
 
 type Footer = {
   text: string;
