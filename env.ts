@@ -14,7 +14,6 @@ export const env = createEnv({
     DISCOGS_CONSUMER_SECRET: z.string().min(1),
     DISCOGS_API_ROUTE: z.string().url(),
   },
-  client: {},
   experimental__runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,

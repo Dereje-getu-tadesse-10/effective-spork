@@ -1,7 +1,7 @@
 "server-only";
 import { prisma } from "@/lib/prisma";
 
-export async function getCollection(id: string) {
+export async function deleteCollectionn(id: string) {
   const collection = await prisma.collection.delete({
     where: {
       id,
